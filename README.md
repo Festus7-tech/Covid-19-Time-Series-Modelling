@@ -58,6 +58,8 @@ b  563388
 > forecast_tes <- forecast(tes_model, h = 5)
 > # Plot
 > plot(forecast_tes)
+> <img width="532" height="308" alt="image" src="https://github.com/user-attachments/assets/8f9c5b0f-2f2c-4a67-9bfd-65347da4d829" />
+
 > # Automatic ARIMA selection
 > auto_arima_model <- auto.arima(covid_ts)
 > # Manual ARIMA specification,
@@ -79,7 +81,8 @@ AIC=305.75   AICc=308.75   BIC=307.21
 +         xlab = "Weekly Data", 
 +         ylab = "Total Positive Cases",
 +         main = "COVID-19 Pandemic (Weekly Cases Over Time)")
-> 
+> <img width="532" height="308" alt="image" src="https://github.com/user-attachments/assets/031f70b8-7d09-4cb0-aa6d-c76de6066165" />
+
 > # Forecast 5 steps ahead
 > forecast_arima <- forecast(manual_arima, h = 5)
 > 
@@ -88,4 +91,5 @@ AIC=305.75   AICc=308.75   BIC=307.21
 +      main = "ARIMA(1,1,1) Forecast of COVID-19 Cases",
 +      xlab = "Weekly Data",
 +      ylab = "Predicted Cases")
-> 
+> <img width="532" height="308" alt="image" src="https://github.com/user-attachments/assets/cb280931-ce60-45dd-8e66-b144de0ca861" />
+
